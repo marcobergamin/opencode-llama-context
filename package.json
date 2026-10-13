@@ -1,0 +1,45 @@
+{
+  "name": "opencode-llama-context",
+  "version": "1.0.0",
+  "description": "OpenCode plugin to dynamically detect and synchronize context size, multimodal vision, and template capabilities from llama-server",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "llama-cpp",
+    "llama-server",
+    "local-llm",
+    "context-window"
+  ],
+  "author": "Marco Bergamin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcobergamin/opencode-llama-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcobergamin/opencode-llama-context/issues"
+  },
+  "homepage": "https://github.com/marcobergamin/opencode-llama-context#readme",
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.1.21",
+    "typescript": "^5.7.0"
+  }
+}
